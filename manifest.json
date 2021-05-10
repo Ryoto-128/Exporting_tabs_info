@@ -2,5 +2,9 @@
     "manifest_version": 3,
     "name": "Exporting Tabs info",
     "description": "[Exporting Tab info] exports tabs information in Json format",
-    "version": "1.0.0"
+    "version": "1.0.0",
+
+    "action": {
+        "default_popup": "/src/action/popup.html"
+    }
 }
