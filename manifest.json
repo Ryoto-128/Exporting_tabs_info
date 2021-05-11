@@ -4,7 +4,13 @@
     "description": "[Exporting Tab info] exports tabs information in Json format",
     "version": "1.0.0",
 
+    "permissions": ["tabs", "storage"],
+
     "action": {
-        "default_popup": "/src/action/popup.html"
+        "default_popup": "/action/popup.html"
+    },
+
+    "background": {
+        "service_worker": "background.js"
     }
 }
