@@ -29,4 +29,5 @@ action_button.addEventListener("click", async() => {
     });
 }); 
 
+
 // memo: async関係なく[chrome.*]の実行が完了する前に次のスクリプトに移動している。
