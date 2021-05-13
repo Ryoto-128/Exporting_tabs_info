@@ -19,15 +19,15 @@ action_button.addEventListener("click", async() => {
             // chrome.tabs.remove(tabs_detail[tab_index].id);
         };
 
-        chrome.storage.local.set({data: tabs_list}, () => {
-            console.log("SET: tabs_list");
-        });
+        let encode_json = JSON.stringify(tabs_list);
+        let convert_to_blob = new Blob([encode_json], {type: 'application/json'});
+        let convert_to_objecturl = URL.createObjectURL(convert_to_blob);
 
-        chrome.runtime.sendMessage({action: "read"}, (responce) => {
-            console.log(responce.status);
-        });
+        let download_link = document.createElement('a');
+        download_link.href = convert_to_objecturl;
+        download_link.download = 'tabs_list.json';
+        download_link.click();
+
+        URL.revokeObjectURL(convert_to_objecturl);
     });
 }); 
-
-
-// memo: async関係なく[chrome.*]の実行が完了する前に次のスクリプトに移動している。
