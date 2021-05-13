@@ -7,6 +7,7 @@
     "permissions": ["tabs"],
 
     "action": {
-        "default_popup": "/action/popup.html"
+        "default_popup": "/action/popup.html",
+        "default_icon": "/images/bookmark-x.png"
     }
 }
