@@ -1,0 +1,52 @@
+/* 配色 https://colorhunt.co/palette/D9E4DD045757044343555555 */
+
+body {
+    width: auto;
+    margin: 0;
+    padding: 10px;
+    font-family: sans-serif;
+    background-color: #D9E4DD;
+    color: #555555;
+}
+h1{
+    font-size: 24px;
+}
+h2{
+    font-size: 16px;
+}
+button{
+    display: block;
+    margin: auto 0;
+    height: 20px;
+    font-family: sans-serif;
+    font-size: 12px;
+    background-color: #555555;
+    color: #D9E4DD;
+}
+
+#header-wrapper, #main-wrapper{
+    width: 320px;
+    border-radius: 5px;
+}
+#header-wrapper{
+    background-color: #CDC9C3;
+}
+#main-wrapper{
+    background-color: #FBF7F0;
+}
+
+#header-wrapper div, #main-wrapper div{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#header-wrapper h1{
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#main-wrapper div{
+    display: flex;
+    justify-content:space-between;
+}
